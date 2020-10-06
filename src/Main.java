@@ -4,5 +4,6 @@ public class Main {
         int x;
         x=3;
         System.out.println(x);
+        "asd"
     }
 }
