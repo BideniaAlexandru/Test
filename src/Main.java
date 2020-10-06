@@ -5,5 +5,6 @@ public class Main {
         x=3;
         System.out.println(x);
         "asd"
+         "asd2"
     }
 }
