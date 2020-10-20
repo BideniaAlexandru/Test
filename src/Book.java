@@ -3,7 +3,7 @@ import java.util.ArrayList;
 class Book {
     public String title;
     public Author author;
-    public ArrayList<Chapter> chapters=new ArrayList<>();
+    public ArrayList<Elements> content=new ArrayList<>();
     Book(String t)
     {
         title=t;
@@ -13,16 +13,15 @@ class Book {
         author=a;
     }
 
-    public int createChapter(String c)
+    public void addContent(Elements elm)
     {
-        Chapter chapter= new Chapter(c);
-        chapters.add(chapter);
-        return chapters.indexOf(chapter);
+        content.add(elm);
     }
-
-    public Chapter getChapter(int n)
-    {
-        return chapters.get(n);
+    public void print() {
+        System.out.println("Book:"+title);
+        System.out.println("Author:"+author.name);
+        for(Elements e: content
+        ) {e.print();}
     }
 
 
