@@ -1,4 +1,4 @@
-import java.awt.*;
+
 
 public class ImageProxy implements Elements{
 
