@@ -29,7 +29,7 @@ public class SubChapter{
         for (Paragraph p: pharagraphs
         ) {System.out.println(p.name);}
         for (Image i: images
-        ) {System.out.println(i.name);}
+        ) {System.out.println(i.imageName);}
         for (Table t: tables
         ) {System.out.println(t.name);}
     }
