@@ -7,6 +7,6 @@ public class AlignLeft implements AlignStrategy {
 
 
     public void render(Paragraph p) {
-        System.out.println("_____"+p.getName() );
+        System.out.println("...."+p.getName() );
     }
 }

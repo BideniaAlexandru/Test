@@ -1,4 +1,4 @@
-public class Table implements  Elements {
+public class Table implements Elements {
     public String name;
     Table(String n)
     {
@@ -6,6 +6,11 @@ public class Table implements  Elements {
     }
     public void print()
     {
-        System.out.println("Table "+name);
+        System.out.println(name);
+    }
+
+    @Override
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
     }
 }

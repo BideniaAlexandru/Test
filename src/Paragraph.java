@@ -1,4 +1,4 @@
-public class Paragraph implements Elements{
+public class Paragraph implements Elements {
     public String name;
     public AlignStrategy align;
     Paragraph(String n)
@@ -20,6 +20,12 @@ public class Paragraph implements Elements{
             align.render(this);
         }
     }
+
+    @Override
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+
 
     public void setAlignStrategy(AlignStrategy c)
     {
