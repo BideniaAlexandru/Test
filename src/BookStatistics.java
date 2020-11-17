@@ -18,6 +18,11 @@ public class BookStatistics implements Visitor{
         sectionCounter ++;
     }
 
+    @Override
+    public void visit(Book book) {
+
+    }
+
     public void printStatistics(){
         System.out.println("Book Statistics: ");
         System.out.println("*** NUmber of images: " + imagesCounter);

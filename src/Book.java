@@ -24,6 +24,12 @@ class Book {
         for(Elements e: content
         ) {e.print();}
     }
+    public void accept(Visitor visitor){
+        visitor.visit(this);
+        for(Elements elem : content){
+            elem.accept(visitor);
+        }
+    }
 
 
 }

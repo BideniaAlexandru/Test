@@ -4,4 +4,5 @@ public interface Visitor {
     public abstract void visit(Paragraph paragraph);
     public abstract void visit(Table table);
     public abstract void visit(Sections section);
+    public abstract void visit(Book book);
 }
